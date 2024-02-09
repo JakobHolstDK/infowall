@@ -9,7 +9,7 @@ do
 	if [ $? -eq 0 ]; then
 		echo "Your branch is behind"
 		git pull
-		java -jar plantuml.jar -tsvg -o ../images/ ../diagrams/*.puml
+		java -jar plantuml.jar openknowit.puml 
 	fi
 	sleep 5
 done
