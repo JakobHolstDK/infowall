@@ -46,8 +46,6 @@ Enterprise_Boundary(c1, "automation services", "Automation services") {
 
 }
 
-}
-
 
 Rel_D(git, ansible, "Read playbooks from git")
 Rel_D(cmdb, ansible, "Read inventory from cmdb")
