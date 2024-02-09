@@ -15,7 +15,9 @@ title   KALM system
 Person(kalmadmin, "Kalm system admin", "KALM system administrator")
 Person(systemadmin, "System administrator", "OS system administrator")
 Person(enduser, "Enduser", "Enduser of the system services")
-Enterprise_Boundary(c0, "Openknowit", "Openknowit organisation") {
+
+
+Enterprise_Boundary(c0, "My Company", "My awesome organisation") {
 System(ansible, "Ansible", "Server configuration management")
 System(git, "Git", "Version control")
 System(cmdb, "CMDB", "Configuration management database")
