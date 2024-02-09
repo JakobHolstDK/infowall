@@ -37,6 +37,8 @@ Enterprise_Boundary(c1, "automation services", "Automation services") {
 
 }
 
+Lay_U(servers)
+
 
 Rel_Neighbor(git, automation, "Read playbooks from git")
 Rel_D(cmdb, automation, "Read inventory from cmdb")
@@ -47,7 +49,7 @@ Rel_U(kalmadmin, git, "Kalm administator pushes kalm config to git")
 
 Rel_U(systemadmin, automation, "System administrator can use automation services")
 BiRel_R(systemadmin, git, "System administrator create and maintain repos in git")
-BiRel_R(systemadmin, cmdb, "System administrator create and maintain servers in cmdb")
+BiRel_L(systemadmin, cmdb, "System administrator create and maintain servers in cmdb")
 BiRel_D(serviceadmin, git, "Service administrator can use git for service configuration")
 
 
