@@ -6,7 +6,7 @@
 ' !include C4_Context.puml
 
 LAYOUT_TOP_DOWN()
-LAYOUT_AS_SKETCH()
+'LAYOUT_AS_SKETCH()
 LAYOUT_WITH_LEGEND()
 
 
@@ -15,12 +15,17 @@ title   KALM system
 Person(user, "Slutbruger", "Ansatte der bruger KALM.")
 Enterprise_Boundary(c0, "Openknowit", "Openknowit organisation") {
 System(ansible, "Ansible", "Server configuration management")
-System(zabbix, "Zabbix", "Monitorering")
 System(git, "Git", "Version control")
 System(cmdb, "CMDB", "Configuration management database")
 
 Enterprise_Boundary(c1, "Kalm", "automation og monitorering") {
     System(kalm, "KALM", "Knowit auitomation lifecycle management")
+}
+Enterprise_Boundary(c2, "Server ", "Virtuelle servere") {
+    System(vmware, "wmware", "Virtual servers running on wmware")
+    System(aws, "AWS", "Virtual servers running on AWS")
+    System(azure, "Azure", "Virtual servers running on Azure")
+    
 }
 }
 
