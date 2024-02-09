@@ -5,7 +5,12 @@ while [[ 1 == 1 ]];
 do
 
 	git fetch
-	git status
+	git status  |grep "Your branch is behind " > /dev/null
+	if [ $? -eq 0 ]; then
+		echo "Your branch is behind"
+		git pull
+		java -jar plantuml.jar -tsvg -o ../images/ ../diagrams/*.puml
+	fi
 	sleep 5
 done
 
