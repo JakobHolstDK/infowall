@@ -22,10 +22,10 @@ System(fileshare, "Fileshare", "Deling af datafiler")
 
 
 
-Enterprise_Boundary(c1, "Forkinngstøtte", "Forkningstøtte på KU") {
-    System(dashdb, "Dash DB", "Database med data til dashboards")
-    System(dashweb, "Dash WEB", "Brugervendte dashboards gui (grafana, django)")
-    System(dashapp, "Dash APP", "API til dashboards")
+Enterprise_Boundary(c1, "ignite", "ignnitesystemet") {
+    System(dashdb, "ignite DB", "Database med data til dashboards")
+    System(dashweb, "ignite WEB", "Brugervendte dashboards gui (grafana, django)")
+    System(dashapp, "ignite APP", "API til dashboards")
 }
 }
 Rel_U(customer, dashweb, "Bruger dashboards via")
