@@ -19,8 +19,6 @@ Person(enduser, "Enduser", "Enduser of the system services")
 
 Enterprise_Boundary(c0, "My Company", "My awesome organisation") {
 System(ansible, "Ansible", "Server configuration management")
-System(git, "Git", "Version control")
-System(cmdb, "CMDB", "Configuration management database")
 
 Enterprise_Boundary(c1, "Kalm", "automation og monitorering") {
     System(kalm, "KALM", "Knowit auitomation lifecycle management")
@@ -34,6 +32,8 @@ Enterprise_Boundary(c2, "Server ", "Virtuelle servere") {
 }
 
 Enterprise_Boundary(c3, "Shared services", "Shared services in the organisation") {
+    System(cmdb, "CMDB", "Configuration management database")
+    System(git, "Git", "Version control")
     System(monitorering, "Monitorering", "Monitorering services")
     System(bacup, "Backup", "Backup and restore services")
     System(storage, "Storage", "Storage services")
