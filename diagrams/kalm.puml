@@ -18,7 +18,6 @@ Person(enduser, "Enduser", "Enduser of the system services")
 
 
 Enterprise_Boundary(c0, "My Company", "My awesome organisation") {
-System(automation, "Ansible", "Server configuration management")
 
 Enterprise_Boundary(c2, "Server ", "Virtuelle servere") {
     System(vmware, "wmware", "Virtual servers running on wmware")
