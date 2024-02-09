@@ -13,7 +13,6 @@ title   KALM system
 
 Person(kalmadmin, "Kalm system admin", "KALM system administrator")
 Person(systemadmin, "System administrator", "OS system administrator")
-Person(enduser, "Enduser", "Enduser of the system services")
 
 
 Enterprise_Boundary(c0, "My Company", "My awesome organisation") {
@@ -54,7 +53,6 @@ Rel_D(cmdb, kalm, "Reads inventory from cmdb")
 Rel_D(git, kalm, "Reads configuration from git")
 
 Rel_D(kalm, automation, "updates automation engine configuration")
-Rel_D(kalm, kalmvisualize, "updates kalm-visualize database")
 
 
 @enduml
