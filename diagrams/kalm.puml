@@ -39,7 +39,7 @@ Enterprise_Boundary(c1, "automation services", "Automation services") {
 }
 
 
-Rel_D(git, automation, "Read playbooks from git")
+Rel_Neighbor(git, automation, "Read playbooks from git")
 Rel_D(cmdb, automation, "Read inventory from cmdb")
 Rel_Neighbor(automation, c2 , "execute playbooks on servers")
 
