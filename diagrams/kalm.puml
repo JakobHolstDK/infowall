@@ -29,6 +29,6 @@ Enterprise_Boundary(c2, "Server ", "Virtuelle servere") {
 }
 
 
-Rel_D(git, ansible, "Read playbooks from git")
+Rel_U(git, ansible, "Read playbooks from git")
 
 @enduml
