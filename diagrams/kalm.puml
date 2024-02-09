@@ -30,6 +30,12 @@ Enterprise_Boundary(c2, "Server ", "Virtuelle servere") {
     System(azure, "Azure", "Virtual servers running on Azure")
     System(physicalservers, "Physical", "Physical servers running on premise")
 }
+
+Enterprise_Boundary(c3, "Shared services", "Shared services in the organisation") {
+    System(monitorering, "Monitorering", "Monitorering services")
+    System(bacup, "Backup", "Backup and restore services")
+    System(storage, "Storage", "Storage services")
+    System(network, "Network", "Network", "Network services")
 }
 
 
@@ -38,8 +44,12 @@ Rel_U(cmdb, ansible, "Read inventory from cmdb")
 Rel_Neighbor(ansible, c2 , "execute playbooks on servers")
 Rel_Neighbor(c0, c2, "Server")
 Rel_U(kalmadmin, git, "Kalm administator pushes kalm config to git")
+Rel_U(kalmadmin, visualize, "Kalm administator visualizes kalm config")
 
 Rel_U(enduser, kalmvisualize, "User with business need can visualize the automation lifecycle")
+
+Rel_U(systemadmin, ansible, "System administrator can execute playbooks")
+
 
 
 @enduml
