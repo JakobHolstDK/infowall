@@ -38,6 +38,8 @@ Enterprise_Boundary(c1, "automation services", "Automation services") {
 
 Lay_L(serviceadmin, systemadmin)
 Lay_R(serviceadmin, kalmadmin)
+Lay_L(c1, c3)
+Lay_R(c1, c2)
 
 
 
@@ -60,7 +62,6 @@ BiRel_D(serviceadmin, git, "Service administrator can use git for service config
 
 Rel_D(cmdb, kalm, "Reads inventory from cmdb")
 Rel_D(git, kalm, "Reads configuration from git")
-
 Rel_L(kalm, automation, "updates automation engine configuration")
 
 
