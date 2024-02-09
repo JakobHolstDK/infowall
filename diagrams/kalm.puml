@@ -6,7 +6,7 @@
 
 'LAYOUT_TOP_DOWN()
 'LAYOUT_AS_SKETCH()
-LAYOUT_WITH_LEGEND()
+'LAYOUT_WITH_LEGEND()
 HIDE_STEREOTYPE()
 
 
@@ -38,11 +38,11 @@ Enterprise_Boundary(c1, "automation services", "Automation services") {
 
 }
 
-Lay_L(serviceadmin, systemadmin)
-Lay_R(serviceadmin, kalmadmin)
-Lay_U(systemadmin, c1)
-Lay_U(kalmadmin, c1)
-Lay_U(serviceadmin, c1)
+'Lay_L(serviceadmin, systemadmin)
+'Lay_R(serviceadmin, kalmadmin)
+'Lay_U(systemadmin, c1)
+'Lay_U(kalmadmin, c1)
+'Lay_U(serviceadmin, c1)
 
 
 
