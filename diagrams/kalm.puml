@@ -29,11 +29,9 @@ Enterprise_Boundary(c3, "Shared services", "Shared services in the organisation"
     System(automation, "Ansible", "Server configuration management")
     System(git, "Git", "Version control")
     System(incident, "Incident", "Incidentmamagement services")
-}
-
-Enterprise_Boundary(c1, "automation services", "Automation services") {
     System(kalm, "KALM", "Knowit auitomation lifecycle management")
 }
+
 
 
 }
