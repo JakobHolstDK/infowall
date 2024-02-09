@@ -36,8 +36,8 @@ Enterprise_Boundary(c1, "automation services", "Automation services") {
 
 }
 
-Lay_D(serviceadmin, systemadmin)
-Lay_D(serviceadmin, kalmadmin)
+Lay_L(serviceadmin, systemadmin)
+Lay_R(serviceadmin, kalmadmin)
 
 
 
