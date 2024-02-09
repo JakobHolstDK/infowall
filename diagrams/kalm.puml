@@ -39,15 +39,15 @@ Enterprise_Boundary(c3, "Shared services", "Shared services in the organisation"
 
 Enterprise_Boundary(c1, "automation services", "Automation services") {
     System(automation, "Ansible", "Server configuration management")
-    System(automation, "KALM", "Knowit auitomation lifecycle management")
-    System(automation, "KALM-Visualize", "Knowit auitomation lifecycle management - visualize")
+    System(kalm, "KALM", "Knowit auitomation lifecycle management")
+    System(kalmvisualize, "KALM-Visualize", "Knowit auitomation lifecycle management - visualize")
 }
 
 
 }
 
 
-Rel_D(git, auitomation, "Read playbooks from git")
+Rel_D(git, automation, "Read playbooks from git")
 Rel_D(cmdb, auitomation, "Read inventory from cmdb")
 Rel_Neighbor(automation, c2 , "execute playbooks on servers")
 Rel_U(kalmadmin, git, "Kalm administator pushes kalm config to git")
