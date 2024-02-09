@@ -53,7 +53,10 @@ Rel_U(systemadmin, automation, "System administrator can execute playbooks")
 
 
 Rel_D(cmdb, kalm, "Reads inventory from cmdb")
+Rel_D(git, kalm, "Reads configuration from git")
+
 Rel_D(kalm, automation, "updates inventory in automation engine")
+Rel_D(kalm, automation, "updates automation engine configuration")
 
 
 @enduml
