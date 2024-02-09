@@ -25,6 +25,6 @@ Enterprise_Boundary(c1, "Kalm", "automation og monitorering") {
 }
 
 
-Rel_D(ignitedb, igniteweb, "henter data fra")
+Rel_D(ansible, git, "Stores playbooks in git")
 
 @enduml
