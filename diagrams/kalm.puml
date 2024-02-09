@@ -26,5 +26,6 @@ Enterprise_Boundary(c1, "Kalm", "automation og monitorering") {
 
 
 Rel_D(ansible, git, "Stores playbooks in git")
+Rel_D(git, ansible, "Read playbooks from git")
 
 @enduml
