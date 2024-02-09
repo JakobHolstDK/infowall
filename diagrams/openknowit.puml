@@ -10,7 +10,7 @@ LAYOUT_AS_SKETCH()
 LAYOUT_WITH_LEGEND()
 
 
-title  Konceptuelt diagram over "Brugervendte dashboards"
+title  Konceptuelt diagram over "Openknowit" systemet
 
 Person(customer, "Ku ansat", "Ansatte på KU der bruger dashboards til at få overblik over data og statistikker.")
 Enterprise_Boundary(c0, "KU IT", "Københavns Universitets IT-afdeling") {
