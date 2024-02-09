@@ -37,7 +37,10 @@ Enterprise_Boundary(c1, "automation services", "Automation services") {
 
 }
 
-Lay_D(serviceadmin,c0)
+Lay_U(serviceadmin,c0)
+Lay_U(systemadmin,c0)
+Lay_U(kalmadmin,c0)
+
 
 
 Rel_Neighbor(git, automation, "Read playbooks from git")
