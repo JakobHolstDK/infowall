@@ -48,7 +48,7 @@ Enterprise_Boundary(c1, "automation services", "Automation services") {
 
 Rel_D(git, automation, "Read playbooks from git")
 Rel_D(cmdb, auitomation, "Read inventory from cmdb")
-Rel_Neighbor(automation, c2 , "execute playbooks on servers")
+Rel_U(automation, c2 , "execute playbooks on servers")
 Rel_U(kalmadmin, git, "Kalm administator pushes kalm config to git")
 Rel_U(kalmadmin, kalmvisualize, "Kalm administator visualizes kalm config")
 
