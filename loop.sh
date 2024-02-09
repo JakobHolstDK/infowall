@@ -10,6 +10,7 @@ do
 		echo "Your branch is behind"
 		git pull
 		java -jar plantuml.jar diagrams/openknowit.puml 
+		java -jar plantuml.jar diagrams/kalm.puml 
 	fi
 	sleep 5
 done
