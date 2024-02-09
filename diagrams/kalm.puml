@@ -30,10 +30,6 @@ Enterprise_Boundary(c3, "Shared services", "Shared services in the organisation"
     System(cmdb, "CMDB", "Configuration management database")
     System(git, "Git", "Version control")
     System(monitorering, "Monitorering", "Monitorering services")
-    System(bacup, "Backup", "Backup and restore services")
-    System(storage, "Storage", "Storage services")
-    System(network, "Network",  "Network services")
-    System(security, "Security", "Security services")
 }
 
 Enterprise_Boundary(c1, "automation services", "Automation services") {
