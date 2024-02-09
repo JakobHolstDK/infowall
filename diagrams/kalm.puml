@@ -46,9 +46,9 @@ Rel_U(automation, c2 , "execute playbooks on servers")
 Rel_U(kalmadmin, git, "Kalm administator pushes kalm config to git")
 
 Rel_U(systemadmin, automation, "System administrator can use automation services")
-Rel_U(systemadmin, git, "System administrator create and maintain repos in git")
-Rel_U(systemadmin, cmdb, "System administrator create and maintain servers in cmdb")
-BiRel_L(serviceadmin, git, "Service administrator can use git for service configuration")
+BiRel_R(systemadmin, git, "System administrator create and maintain repos in git")
+BiRel_R(systemadmin, cmdb, "System administrator create and maintain servers in cmdb")
+BiRel_D(serviceadmin, git, "Service administrator can use git for service configuration")
 
 
 
