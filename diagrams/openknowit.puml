@@ -33,7 +33,7 @@ Rel_D(isilon, fileshare, "sender data filer til")
 Rel_D(Hdrives, fileshare, "sender data filer til")
 Rel_U(fileshare, dashapp, "henter data fra")
 Rel_Neighbor(zabbix, igniteapp, "sender monitoreringsdata til")
-Rel_U(dashapp, ignitedb, "gemmer data i")
-Rel_D(dashdb, igniteweb, "henter data fra")
+Rel_U(igniteapp, ignitedb, "gemmer data i")
+Rel_D(ignitedb, igniteweb, "henter data fra")
 
 @enduml
