@@ -40,6 +40,9 @@ Lay_L(serviceadmin, systemadmin)
 Lay_R(serviceadmin, kalmadmin)
 Lay_U(c1, c3)
 Lay_U(c1, c2)
+Lay_U(systemadmin, c1)
+Lay_U(kalmadmin, c1)
+Lay_U(serviceadmin, c1)
 
 
 
