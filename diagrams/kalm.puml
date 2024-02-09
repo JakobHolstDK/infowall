@@ -61,7 +61,7 @@ BiRel_D(serviceadmin, git, "Service administrator can use git for service config
 Rel_D(cmdb, kalm, "Reads inventory from cmdb")
 Rel_D(git, kalm, "Reads configuration from git")
 
-Rel_U(kalm, automation, "updates automation engine configuration")
+Rel_D(kalm, automation, "updates automation engine configuration")
 
 
 @enduml
