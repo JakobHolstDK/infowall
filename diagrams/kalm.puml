@@ -10,30 +10,21 @@ LAYOUT_AS_SKETCH()
 LAYOUT_WITH_LEGEND()
 
 
-title  Konceptuelt diagram over "Openknowit" systemet
+title   KALM system
 
-Person(customer, "Slutbruger", "Ansatte der bruger KALM.")
-Enterprise_Boundary(c0, "Openknowit", "Openknowit systemet") {
-System(isilon, "Isilon", "Storage til data")
-System(Hdrives, "H-drev", "Storage til data")
-System(zabbix, "Zabbix", "Monitorering af systemer")
-System(fileshare, "Fileshare", "Deling af datafiler")
+Person(user, "Slutbruger", "Ansatte der bruger KALM.")
+Enterprise_Boundary(c0, "Openknowit", "Openknowit organisation") {
+System(ansible, "Ansible", "Server configuration management")
+System(zabbix, "Zabbix", "Monitorering")
+System(git, "Git", "Version control")
+System(cmdb, "CMDB", "Configuration management database")
 
-
-
-
-Enterprise_Boundary(c1, "ignite", "ignnitesystemet") {
-    System(ignitedb, "ignite DB", "Database med data til dashboards")
-    System(igniteweb, "ignite WEB", "Brugervendte dashboards gui (grafana, django)")
-    System(igniteapp, "ignite APP", "API til dashboards")
+Enterprise_Boundary(c1, "Kalm", "automation og monitorering") {
+    System(kalm, "KALM", "Knowit auitomation lifecycle management")
 }
 }
-Rel_U(customer, igniteweb, "Bruger dashboards via")
-Rel_D(isilon, fileshare, "sender data filer til")
-Rel_D(Hdrives, fileshare, "sender data filer til")
-Rel_U(fileshare, igniteapp, "henter data fra")
-Rel_Neighbor(zabbix, igniteapp, "sender monitoreringsdata til")
-Rel_U(igniteapp, ignitedb, "gemmer data i")
+
+
 Rel_D(ignitedb, igniteweb, "henter data fra")
 
 @enduml
