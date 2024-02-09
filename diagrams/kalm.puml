@@ -37,7 +37,9 @@ Rel_U(git, ansible, "Read playbooks from git")
 Rel_U(cmdb, ansible, "Read inventory from cmdb")
 Rel_Neighbor(ansible, c2 , "execute playbooks on servers")
 Rel_Neighbor(c0, c2, "Server")
-Rel_U(user, git, "Kalm administator pushes kalm config to git")
+Rel_U(kalmadmin, git, "Kalm administator pushes kalm config to git")
+
+Rel_U(enduser, kalmvisualize, "User with business need can visualize the automation lifecycle")
 
 
 @enduml
