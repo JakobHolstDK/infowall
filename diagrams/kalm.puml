@@ -31,7 +31,7 @@ Enterprise_Boundary(c2, "Server ", "Virtuelle servere") {
 
 Rel_U(git, ansible, "Read playbooks from git")
 Rel_U(cmdb, ansible, "Read inventory from cmdb")
-Rel_Neighbor(ansible, , "KALM")
+Rel_Neighbor(ansible, c2 , "execute playbooks on servers")
 Rel_Neighbor(c0, c2, "Server")
 
 
