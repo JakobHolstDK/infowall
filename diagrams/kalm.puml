@@ -48,7 +48,7 @@ Lay_U(serviceadmin, c1)
 
 
 Rel_Neighbor(git, automation, "Read playbooks from git")
-Rel_D(cmdb, automation, "Read inventory from cmdb")
+Rel_Neighbor(cmdb, automation, "Read inventory from cmdb")
 Rel_U(automation, c2 , "execute playbooks on servers")
 
 
