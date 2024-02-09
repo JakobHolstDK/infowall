@@ -1,0 +1,23 @@
+
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+' uncomment the following line and comment the first to use locally
+' !include C4_Context.puml
+
+LAYOUT_TOP_DOWN()
+'LAYOUT_AS_SKETCH()
+'LAYOUT_WITH_LEGEND()
+
+
+title  Konceptuelt diagram over "grafana"
+
+Person(customer, "Ku ansat", "Ansatte på KU der bruger dashboards til at få overblik over data og statistikker.")
+Enterprise_Boundary(c0, "KU IT", "Københavns Universitets IT-afdeling") {
+Enterprise_Boundary(c1, "Forkinngstøtte", "Forkningstøtte på KU") {
+    System(dashweb, "Dash WEB", "Brugervendte dashboards gui (grafana, django)")
+}
+}
+Rel_U(customer, dashweb, "Bruger dashboards via")
+
+@enduml
