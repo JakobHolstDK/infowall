@@ -21,8 +21,6 @@ Enterprise_Boundary(c0, "My Company", "My awesome organisation") {
 
 Enterprise_Boundary(c2, "Server ", "Virtuelle servere") {
     System(vmware, "wmware", "Virtual servers running on wmware")
-    System(aws, "AWS", "Virtual servers running on AWS")
-    System(azure, "Azure", "Virtual servers running on Azure")
     System(physicalservers, "Physical", "Physical servers running on premise")
 }
 
@@ -38,11 +36,6 @@ Enterprise_Boundary(c1, "automation services", "Automation services") {
     System(kalmvisualize, "KALM-Visualize", "Knowit auitomation lifecycle management - visualize")
 }
 
-System_Boundary(c2, "Server") {
-    System(aws, "AWS", "Virtual servers running on AWS")
-    System(azure, "Azure", "Virtual servers running on Azure")
-    System(physicalservers, "Physical", "Physical servers running on premise")
-}
 
 }
 
