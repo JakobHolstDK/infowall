@@ -13,6 +13,7 @@ title   KALM system
 
 Person(kalmadmin, "Kalm system admin", "KALM system administrator")
 Person(systemadmin, "System administrator", "OS system administrator")
+Person(serviceadmin, "Service administrator", "administrator of services eg. zabbix, networker, etc")
 
 
 Enterprise_Boundary(c0, "My Company", "My awesome organisation") {
