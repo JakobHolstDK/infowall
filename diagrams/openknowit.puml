@@ -23,17 +23,17 @@ System(fileshare, "Fileshare", "Deling af datafiler")
 
 
 Enterprise_Boundary(c1, "ignite", "ignnitesystemet") {
-    System(dashdb, "ignite DB", "Database med data til dashboards")
-    System(dashweb, "ignite WEB", "Brugervendte dashboards gui (grafana, django)")
-    System(dashapp, "ignite APP", "API til dashboards")
+    System(ignitedb, "ignite DB", "Database med data til dashboards")
+    System(igniteweb, "ignite WEB", "Brugervendte dashboards gui (grafana, django)")
+    System(igniteapp, "ignite APP", "API til dashboards")
 }
 }
-Rel_U(customer, dashweb, "Bruger dashboards via")
+Rel_U(customer, igniteweb, "Bruger dashboards via")
 Rel_D(isilon, fileshare, "sender data filer til")
 Rel_D(Hdrives, fileshare, "sender data filer til")
 Rel_U(fileshare, dashapp, "henter data fra")
-Rel_Neighbor(zabbix, dashapp, "sender monitoreringsdata til")
-Rel_U(dashapp, dashdb, "gemmer data i")
-Rel_D(dashdb, dashweb, "henter data fra")
+Rel_Neighbor(zabbix, igniteapp, "sender monitoreringsdata til")
+Rel_U(dashapp, ignitedb, "gemmer data i")
+Rel_D(dashdb, igniteweb, "henter data fra")
 
 @enduml
