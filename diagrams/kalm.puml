@@ -12,7 +12,9 @@ LAYOUT_WITH_LEGEND()
 
 title   KALM system
 
-Person(user, "Slutbruger", "Ansatte der bruger KALM.")
+Person(kalmadmin, "Kalm system admin", "KALM system administrator")
+Person(systemadmin, "System administrator", "OS system administrator")
+Person(enduser, "Enduser", "Enduser of the system services")
 Enterprise_Boundary(c0, "Openknowit", "Openknowit organisation") {
 System(ansible, "Ansible", "Server configuration management")
 System(git, "Git", "Version control")
@@ -20,6 +22,7 @@ System(cmdb, "CMDB", "Configuration management database")
 
 Enterprise_Boundary(c1, "Kalm", "automation og monitorering") {
     System(kalm, "KALM", "Knowit auitomation lifecycle management")
+    System(kalmvisualize, "KALM-Visualize", "Knowit auitomation lifecycle management - visualize")
 }
 Enterprise_Boundary(c2, "Server ", "Virtuelle servere") {
     System(vmware, "wmware", "Virtual servers running on wmware")
