@@ -30,6 +30,6 @@ Enterprise_Boundary(c2, "Server ", "Virtuelle servere") {
 
 
 Rel_U(git, ansible, "Read playbooks from git")
-Rel_U(git, ansible, "Read inventory from cmdb")
+Rel_U(cmdb, ansible, "Read inventory from cmdb")
 
 @enduml
