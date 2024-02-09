@@ -48,7 +48,8 @@ Rel_U(kalmadmin, git, "Kalm administator pushes kalm config to git")
 Rel_U(kalmadmin, kalmvisualize, "Kalm administator visualizes kalm config")
 
 Rel_U(enduser, kalmvisualize, "User with business need can visualize the automation lifecycle")
-Rel_U(systemadmin, automation, "System administrator can execute playbooks")
+Rel_U(systemadmin, automation, "System administrator can use automation services")
+Rel_U(systemadmin, git, "System administrator create and maintain repos in git")
 
 
 
