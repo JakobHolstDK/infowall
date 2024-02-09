@@ -26,12 +26,12 @@ Enterprise_Boundary(c2, "Server ", "Virtuelle servere") {
 
 Enterprise_Boundary(c3, "Shared services", "Shared services in the organisation") {
     System(cmdb, "CMDB", "Configuration management database")
+    System(automation, "Ansible", "Server configuration management")
     System(git, "Git", "Version control")
     System(monitorering, "Monitorering", "Monitorering services")
 }
 
 Enterprise_Boundary(c1, "automation services", "Automation services") {
-    System(automation, "Ansible", "Server configuration management")
     System(kalm, "KALM", "Knowit auitomation lifecycle management")
     System(kalmvisualize, "KALM-Visualize", "Knowit auitomation lifecycle management - visualize")
 }
