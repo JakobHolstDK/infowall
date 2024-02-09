@@ -11,13 +11,12 @@ LAYOUT_WITH_LEGEND()
 
 title   KALM system
 
-Person(kalmadmin, "Kalm system admin", "KALM system administrator")
-Person(systemadmin, "System administrator", "OS system administrator")
-Person(serviceadmin, "Service administrator", "administrator of services eg. zabbix, networker, etc")
-
 
 Enterprise_Boundary(c0, "My Company", "My awesome organisation") {
 
+Person(kalmadmin, "Kalm system admin", "KALM system administrator")
+Person(systemadmin, "System administrator", "OS system administrator")
+Person(serviceadmin, "Service administrator", "administrator of services eg. zabbix, networker, etc")
 Enterprise_Boundary(c2, "Server ", "Virtuelle servere") {
     System(vmware, "wmware", "Virtual servers running on wmware")
     System(physicalservers, "Physical", "Physical servers running on premise")
@@ -37,7 +36,7 @@ Enterprise_Boundary(c1, "automation services", "Automation services") {
 
 }
 
-Lay_U(serviceadmin, c3)
+Lay_D(serviceadmin)
 Lay_D(systemadmin, c0)
 Lay_D(kalmadmin, c1)
 
