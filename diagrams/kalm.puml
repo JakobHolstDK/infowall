@@ -47,6 +47,10 @@ Rel_U(kalmadmin, git, "Kalm administator pushes kalm config to git")
 
 Rel_U(systemadmin, automation, "System administrator can use automation services")
 Rel_U(systemadmin, git, "System administrator create and maintain repos in git")
+Rel_U(systemadmin, cmdb, "System administrator create and maintain servers in cmdb")
+Rel_U(serviceadmin, git, "Service administrator can use git for service configuration")
+
+
 
 
 
