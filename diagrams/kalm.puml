@@ -25,12 +25,10 @@ Enterprise_Boundary(c2, "Server ", "Virtuelle servere") {
     System(vmware, "wmware", "Virtual servers running on wmware")
     System(aws, "AWS", "Virtual servers running on AWS")
     System(azure, "Azure", "Virtual servers running on Azure")
-    
 }
 }
 
 
-Rel_D(ansible, git, "Stores playbooks in git")
 Rel_D(git, ansible, "Read playbooks from git")
 
 @enduml
